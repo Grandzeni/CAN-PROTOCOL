@@ -12,3 +12,10 @@ This project implements a CAN (Controller Area Network) protocol for STM32 micro
 
  Configurable Filtering for selective message reception.
 
+# How It Works
+The default mode is loopback for testing CAN transmission and reception within a single MCU.
+
+To enable communication between multiple STM32 MCUs,we can switch to normal mode (CAN_MODE_NORMAL).
+
+The CAN interrupt handles incoming messages for real-time data processing
+
